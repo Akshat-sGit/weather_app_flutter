@@ -1,11 +1,11 @@
 buildscript {
-    ext.kotlin_version = '1.8.10'  // Update to the latest version
+    ext.kotlin_version = '1.9.0'  // Use the version compatible with your dependencies
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath 'com.android.tools.build:gradle:7.0.4'  // Ensure this is compatible with your setup
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
