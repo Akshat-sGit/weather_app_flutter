@@ -6,9 +6,9 @@ import 'city_screen.dart';
 
 
 class LocationScreen extends StatefulWidget {
-  const LocationScreen({this.locationWeather});
+  final String? locationWeather;
+  const LocationScreen({super.key, this.locationWeather});
 
-  final locationWeather;
 
   @override
   _LocationScreenState createState() => _LocationScreenState();
@@ -83,7 +83,7 @@ class _LocationScreenState extends State<LocationScreen> {
                         context,
                         MaterialPageRoute(
                           builder: (context) {
-                            return CityScreen();
+                            return const CityScreen();
                           },
                         ),
                       );
